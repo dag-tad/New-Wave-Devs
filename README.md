@@ -1,6 +1,8 @@
 # Use the following scripts to better understand the project
 
-## Available Scripts
+This project is containerized and you can run the it by using either npm command or running the container. Below are different available npm commands and their description.
+
+## Available npm Scripts
 
 In the project directory, you can run:
 
@@ -27,3 +29,17 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+## Docker files
+
+There are two docker files ('Dockerfile.dev' and 'Dockerfile') available in this project. The first one is used for development purpose and the second one is for production. The docker-compose file uses image build from Dockerfile.dev file.
+
+## Available docker commands
+
+### `docker build -t <tag name> .`
+
+Creates docker image for producrion.
+
+### `docker-compose up`
+
+This command creates docker images for development purpose.
