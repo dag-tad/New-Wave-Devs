@@ -5,7 +5,8 @@ This project is containerized and you can run the it by using either npm command
 ## Available npm Scripts
 
 In the project directory, you can run:
-
+### `npm install`
+then run the following command to start the app.
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -36,10 +37,12 @@ There are two docker files ('Dockerfile.dev' and 'Dockerfile') available in this
 
 ## Available docker commands
 
+## `docker-compose up --build`
+The above command will lounch a docker container and map port 3000 to 3000.
+
 ### `docker build -t <tag name> .`
-
-Creates docker image for producrion.
-
-### `docker-compose up`
+#### `Example`
+### `docker build -t dagtad/web -f Dockerfile.dev .`
+### `docker run -p 3000:3000 dagtad/web`
 
 This command creates docker images for development purpose.
